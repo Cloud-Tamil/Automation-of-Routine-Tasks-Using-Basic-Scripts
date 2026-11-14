@@ -1,0 +1,36 @@
+{
+  "IdleThresholdMinutes": 60,
+  "ScanIntervalMinutes": 60,
+  "DisconnectedPolicy": "NextScan",
+  "DryRun": true,
+  "MaxLogoffsPerScan": 10,
+  "WarningSeconds": 0,
+  "ProtectedUsers": [
+    "Administrator",
+    "admin",
+    "Guest",
+    "DefaultAccount",
+    "WDAGUtilityAccount",
+    "SYSTEM",
+    "LOCAL SERVICE",
+    "NETWORK SERVICE"
+  ],
+  "ProtectedUserPatterns": [
+    "svc_*",
+    "service_*",
+    "sql_*"
+  ],
+  "ProtectedGroups": [
+    "Administrators",
+    "Domain Admins",
+    "Enterprise Admins"
+  ],
+  "AllowedSessionNamePatterns": [
+    "rdp-tcp*"
+  ],
+  "IncludeConsoleSessions": false,
+  "EnableWindowsEventLog": true,
+  "EventLogSource": "ServerSessionManager",
+  "LogRetentionDays": 30,
+  "LogDirectory": "C:\\ProgramData\\ServerSessionManager\\logs"
+}

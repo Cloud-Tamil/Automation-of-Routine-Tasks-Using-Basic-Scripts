@@ -1,0 +1,10 @@
+[Unit]
+Description=Cross-Platform Server Idle Session Monitor
+After=systemd-logind.service sshd.service ssh.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/server-session-manager/monitor-sessions.sh /opt/server-session-manager/config.conf
+User=root
+StandardOutput=journal
+StandardError=journal

@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Server Idle Session Monitor Every Hour
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+AccuracySec=1min
+Persistent=true
+Unit=session-monitor.service
+
+[Install]
+WantedBy=timers.target
